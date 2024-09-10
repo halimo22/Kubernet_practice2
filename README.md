@@ -150,8 +150,8 @@ busybox888
 ## Lab 4
 
 - What is a namespace in Kubernetes, and why is it used?
-
-used to divide clusters logically
+A logical way to divide cluster resources 
+used to divide resources among teams like production and testing 
 
 ---------------------
 - How do you create a new namespace in Kubernetes using the kubectl command?
@@ -177,6 +177,7 @@ metadata:
 ---------------------
 - Can two different namespaces have resources with the same name? Explain your answer.
 Namespaces provide a scope for names. Names of resources need to be unique within a namespace, but not across namespaces.
+As the resources are divided and shared among the namespaces. 
 " From kubernets documentation "
 ---------------------
 - How can you check the resource quotas and limits for a specific namespace?
