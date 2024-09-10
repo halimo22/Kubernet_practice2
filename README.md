@@ -181,13 +181,20 @@ Namespaces provide a scope for names. Names of resources need to be unique withi
 ---------------------
 - How can you check the resource quotas and limits for a specific namespace?
 kubectl describe quota --namespace=myspace
+or 
+kubectl get limitranges -n <namespace-name>
+kubectl get resourcequotas -n <namespace-name>
 ---------------------
 - How do you configure a kubectl context to always use a specific namespace by default?
-
+kubectl config set-context --current --namespace=<namespace-name>
 ---------------------
 - Create a YAML file to define a new namespace called dev-environment. Deploy it using kubectl.
+![alt text](image-18.png)
 ---------------------
 - Write a command to deploy a pod named test-pod running the nginx image into a namespace called testing.
+![alt text](image-19.png)
 ---------------------
 - List all the pods running in a namespace called production.
+
+![alt text](image-20.png)
 
